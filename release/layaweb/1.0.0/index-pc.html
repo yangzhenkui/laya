@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset='utf-8' />
+	<title>贪吃蛇</title>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+	/>
+
+</head>
+
+<body style="background-color:#222">
+<style>
+	.introduce{
+		color: #fff;
+		text-align: center;
+		line-height: 1.5em;
+		margin: 10px auto;
+	}
+	a{
+		color:#fff;
+	}
+	iframe{
+		width: 700px;
+		height: 400px;
+		margin: 0 auto;
+		display: block;
+	}
+</style>
+	<iframe src="index.html" frameborder="0" id="iframe"></iframe>
+	
+<script>
+	window.onload = function(){
+		document.getElementById("iframe").focus()
+		document.getElementById("iframe").onblur = function(){
+			document.getElementById("iframe").focus()
+		}
+	}
+</script>
+</body>
+
+</html>
